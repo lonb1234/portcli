@@ -101,3 +101,12 @@ p{color:green;
        width:33.3333%;
        padding-right:7.5%;
      }
+
+
+     a{
+       color: green;
+     }
+
+     .current-link {
+      color:#baada7;
+  }

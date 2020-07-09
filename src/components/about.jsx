@@ -94,6 +94,16 @@ function About(){
 
 
 </tr>
+<tr><td>
+<h1>C#</h1>
+
+<div id="myProgress">
+  <div id="csharp" class="myBar">35%</div>
+</div></td>
+
+
+</tr>
+
 </table>
 
 
