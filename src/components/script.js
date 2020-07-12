@@ -20,6 +20,9 @@ var x=""
 
 
 const HomeText="<div><Header/></div>"
+const contactText=<div><Header/><Port/><Input/></div>
+
+
 
 var keychecker=$('h1').text()
 
@@ -27,7 +30,7 @@ var keychecker=$('h1').text()
 
 $('body').keypress(function(event){
 
-  if ($('h1').text()!="Contact"){
+  if ($('h1').text()!=="contact"){
     if(event.keyCode === 8){
         $('.typing').html($('.typing').html().substring(0,$('.typing').html().length - 1))
      x=x.substring(0, x.length - 1);
@@ -35,9 +38,12 @@ $('body').keypress(function(event){
 
   
     else if(event.keyCode=== 13){
-        if (x==="about"){
-        const textAbout= $( ".typing" ).html($(".typing").html()+"<br>"+"<p>[Root@Home ~]$ </p>" + ReactDOM.render(<div><Header/><About/><Input/></div> ,
-          document.getElementById("root"))) 
+      keychecker=$('#head').text()
+        if (x==="about" ){
+        alert(keychecker)
+        const textAbout= $( ".typing" ).html($(".typing").html()+"<br>"+"<p>[Root@Home ~]$ </p>") + ReactDOM.render(<div><Header/><About/><Input/></div> ,
+          document.getElementById("root")) 
+          $("#head").html("About")
 x=""
 
 var data = [
@@ -63,14 +69,16 @@ data.forEach(function(entry) {
 return <div>{textAbout}</div>
  
         }
-        else if(x.toLowerCase()==="projects"){
-          const textAbout= $( ".typing" ).html($(".typing").html()+"<br>"+"<p>[Root@Home ~]$ </p>" + ReactDOM.render(<div><Header/><Port/><Input/></div> ,
-            document.getElementById("root"))) 
+        else if(x.toLowerCase()==="projects" ){
+          keychecker=$("#head").html()
+          const textAbout= $( ".typing" ).html($(".typing").html()+"<br>"+"<p>[Root@Home ~]$ </p>" ) + ReactDOM.render(contactText,
+            document.getElementById("root"))
+            $("#head").html("Projects")
             x=""
 }
 else if(x==="contact"){
-  const textAbout= $( ".typing" ).html($(".typing").html()+"<br>"+"<p>[Root@Home ~]$ </p>" + ReactDOM.render(<div><Header/><Contact/><Input/></div> ,
-    document.getElementById("root"))) 
+  const textAbout= $( ".typing" ).html($(".typing").html()+"<br>"+"<p>[Root@Home ~]$ </p>") + ReactDOM.render(<div><Header/><Contact/><Input/></div> ,
+    document.getElementById("root")) 
     $("h1").html("contact")
 x=""
 typeCheck="3"

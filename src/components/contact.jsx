@@ -1,25 +1,4 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
 
-// class Contact extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       description: ""
-//     };
-//   }
-//   render() {
-//     return (
-//       <form>
-//       <textarea value={this.state.description} />
-//       </form>
-//     );
-//   }
-// }
-
-
-//     export default Contact;
-    
 
 import React from 'react';
 
@@ -67,7 +46,7 @@ export default class extends React.Component {
       	/>
     	</div>
     	<input type="button" value="Submit" className="btn btn--submit" onClick={this.handleSubmit} />
-
+		<input type="button" value="Cancel" className="btn btn--submit" onclick="window.location.href=/index.html" />
 
   	</form>
 	)
@@ -98,9 +77,7 @@ export default class extends React.Component {
 		window.location.href = "/index.html"
 	  })
 	  
-/// remove console log to link or modules!!!!!
 
-  	// Handle errors here however you like, or use a React error boundary
   	.catch(err => console.error('mail error:', err))
   }
 }

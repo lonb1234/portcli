@@ -11,8 +11,8 @@ function Port(){
 
 <h1><a  href="http://uitdebasisschoolgeklapt.nl/">Uit de basisschool geklapt</a></h1>
 <p>Node.js blog website</p>
-http://uitdebasisschoolgeklapt.nl
-</div>  )
+<br></br><br></br>
+</div>)
 }
 
 export default Port;
