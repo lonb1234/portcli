@@ -40,7 +40,7 @@ $('body').keypress(function(event){
     else if(event.keyCode=== 13){
       keychecker=$('#head').text()
         if (x==="about" ){
-        alert(keychecker)
+     
         const textAbout= $( ".typing" ).html($(".typing").html()+"<br>"+"<p>[Root@Home ~]$ </p>") + ReactDOM.render(<div><Header/><About/><Input/></div> ,
           document.getElementById("root")) 
           $("#head").html("About")
