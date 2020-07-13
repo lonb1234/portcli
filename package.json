@@ -4,7 +4,6 @@
   "description": "",
   "engines":{
     "npm": "5.7.1",
-    "node": "14.5.0"
   },
   "keywords": [],
   "main": "src/index.js",
